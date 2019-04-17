@@ -1,0 +1,16 @@
+The altitude_info table is missing data for air density (lbpercf)
+at altitudes 4000, 5000, 10000, 12000
+these values can be interpolated or extrapolated, however it seems prudent to tabulate these values
+
+Also 
+minimum elevation is     0 ft
+maximum elevation is 12000 ft
+
+Since this program is for US / North America, max and minimum elevations are:
+20310 ft (Denali, Alaska) and -279 ft (Badwater Basin - Death Valley, California)
+
+While the appropriate values for these locations can be extrapolated, it seems prudent to explicitly extend the tabulated values
+to encompass these extremes
+
+Also, it may be a good idea to extend to Earth extremes (although I understand highest city is 12313 ft (Badrinath, India)
+29029 ft (Mt Everest) and lowest point is -1404 ft (Dead Sea, Israel)

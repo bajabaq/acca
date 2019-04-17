@@ -1,0 +1,228 @@
+doing this standalone
+	Doing load calc (manual J or J-AE) for Whiteside Residence Upstairs
+============================================================
+Worksheet A: Indoor and Outdoor Design Conditions
+------------------------------------------------------------
+Project             : Whiteside Residence Upstairs
+City, State         :      augusta ap, georgia
+Table 1A Latitude   : 33.0
+Table 1A Elevation  : 148.0
+Indoor Conditions
+    Heating DryBulb : 70
+    Winter (Heating) humidifcation : ???? - FIX ME
+    Cooling DryBulb : 75
+    Cooling RH%     : 50
+Outdoor Design Conditions
+    99% DryBulb     : 25.0
+     1% DryBulb     : 94.0
+   Grains Difference: 44.0
+         Daily Range: medium
+Heating temperature difference (HTD)  : 45.0
+Cooling temperature difference (CTD)  : 19.0
+Table 10A ACF                         : 1.00
+============================================================
+
+Zone 1
+    Zone 1 ExtWall 1
+        Zone 1 ExtWall 1 Window 1
+4.0
+3.0
+4.0
+        Zone 1 ExtWall 1 Window 2
+4.0
+3.0
+4.0
+    Zone 1 ExtWall 2
+    Zone 1 ExtWall 3
+    Zone 1 ExtWall 4
+        Zone 1 ExtWall 4 Window 1
+4.0
+3.0
+4.0
+        Zone 1 ExtWall 4 Window 2
+4.0
+3.0
+4.0
+    Zone 1 ExtWall 5
+Zone 2
+    Zone 2 ExtWall 1
+    Zone 2 ExtWall 2
+    Zone 2 ExtWall 3
+        Zone 2 ExtWall 3 Window 1
+4.0
+3.0
+4.0
+============================================================
+Worksheet B: Heating and Cooling HTM and Load Area for Windows and Glass Doors
+------------------------------------------------------------
+Direction             :     W
+Number of panes_thick :     2
+Frame Type            :     w
+ 1) Table 2A construction number               : 1D-c      
+ 2) Table 2A U-value                           : 0.57
+ 3) Unadjusted heating HTM = U x HTD           : 25.65
+ 4) Heating HTM adjustment (see Note 1)        : 1.00
+ 5) Adjusted heating HTM (L3 x L4)             : 25.65
+ 6) Unadjusted cooling (from Table 3A)         : 46.00
+ 7) Cooling HTM adjustment (see Note 2)        : 0.90
+ 8) Adjusted cooling HTM (L6 x L7)             : 41.40
+ 9) Area of opening (SqFt) for one unit        : 13.87
+10) Number of identical assemblies             :  1
+11) Net area of identical assemblies (L9 x L10): 13.87
+
+Overhang Adjustment
+12) Opening height (H) in ft                   : 4.75
+13) Overhang length (X) in ft                  : 96.00
+14) SLM value for local latitude               : 0.82
+15) Shade line to OH (Z) = L13 x L14           : 78.720
+16) Distance below OH (Y)                      : 1.00
+17) Shaded height                              : 77.720
+18) Unshaded height (U)                        :
+19) North HTM from Table 3A                    : 16.00
+20) HTM adjustment (copy L7)                   : 0.90
+21) Adjusted North HTM (L19 x L20)             : 14.40
+22) Shaded glass factor = L17 / L12            :
+23) Unshaded glass factor = L18 / L12          :
+24) Shaded HTM = L21 x L22                     :
+25) Unshaded HTM = L8 x L23                    :
+26) Effective HTM = L24 + L25                  : 14.40
+------------------------------------------------------------
+Direction             :     W
+Number of panes_thick :     2
+Frame Type            :     w
+ 1) Table 2A construction number               : 1D-c      
+ 2) Table 2A U-value                           : 0.57
+ 3) Unadjusted heating HTM = U x HTD           : 25.65
+ 4) Heating HTM adjustment (see Note 1)        : 1.00
+ 5) Adjusted heating HTM (L3 x L4)             : 25.65
+ 6) Unadjusted cooling (from Table 3A)         : 46.00
+ 7) Cooling HTM adjustment (see Note 2)        : 1.00
+ 8) Adjusted cooling HTM (L6 x L7)             : 46.00
+ 9) Area of opening (SqFt) for one unit        : 13.87
+10) Number of identical assemblies             :  1
+11) Net area of identical assemblies (L9 x L10): 13.87
+
+Overhang Adjustment
+12) Opening height (H) in ft                   : 4.75
+13) Overhang length (X) in ft                  : 96.00
+14) SLM value for local latitude               : 0.82
+15) Shade line to OH (Z) = L13 x L14           : 78.720
+16) Distance below OH (Y)                      : 1.00
+17) Shaded height                              : 77.720
+18) Unshaded height (U)                        :
+19) North HTM from Table 3A                    : 16.00
+20) HTM adjustment (copy L7)                   : 1.00
+21) Adjusted North HTM (L19 x L20)             : 16.00
+22) Shaded glass factor = L17 / L12            :
+23) Unshaded glass factor = L18 / L12          :
+24) Shaded HTM = L21 x L22                     :
+25) Unshaded HTM = L8 x L23                    :
+26) Effective HTM = L24 + L25                  : 16.00
+------------------------------------------------------------
+Direction             :     E
+Number of panes_thick :     2
+Frame Type            :     w
+ 1) Table 2A construction number               : 1D-c      
+ 2) Table 2A U-value                           : 0.57
+ 3) Unadjusted heating HTM = U x HTD           : 25.65
+ 4) Heating HTM adjustment (see Note 1)        : 1.00
+ 5) Adjusted heating HTM (L3 x L4)             : 25.65
+ 6) Unadjusted cooling (from Table 3A)         : 46.00
+ 7) Cooling HTM adjustment (see Note 2)        : 1.00
+ 8) Adjusted cooling HTM (L6 x L7)             : 46.00
+ 9) Area of opening (SqFt) for one unit        : 15.25
+10) Number of identical assemblies             :  2
+11) Net area of identical assemblies (L9 x L10): 30.50
+
+Overhang Adjustment
+12) Opening height (H) in ft                   : 4.17
+13) Overhang length (X) in ft                  : 1.00
+14) SLM value for local latitude               : 0.82
+15) Shade line to OH (Z) = L13 x L14           : 0.820
+16) Distance below OH (Y)                      : 0.66
+17) Shaded height                              : 0.160
+18) Unshaded height (U)                        : 4.01
+19) North HTM from Table 3A                    : 16.00
+20) HTM adjustment (copy L7)                   : 1.00
+21) Adjusted North HTM (L19 x L20)             : 16.00
+22) Shaded glass factor = L17 / L12            : 0.04
+23) Unshaded glass factor = L18 / L12          : 0.96
+24) Shaded HTM = L21 x L22                     : 0.61
+25) Unshaded HTM = L8 x L23                    : 44.23
+26) Effective HTM = L24 + L25                  : 44.85
+------------------------------------------------------------
+Direction             :     E
+Number of panes_thick :     2
+Frame Type            :     w
+ 1) Table 2A construction number               : 1D-c      
+ 2) Table 2A U-value                           : 0.57
+ 3) Unadjusted heating HTM = U x HTD           : 25.65
+ 4) Heating HTM adjustment (see Note 1)        : 1.00
+ 5) Adjusted heating HTM (L3 x L4)             : 25.65
+ 6) Unadjusted cooling (from Table 3A)         : 46.00
+ 7) Cooling HTM adjustment (see Note 2)        : 1.00
+ 8) Adjusted cooling HTM (L6 x L7)             : 46.00
+ 9) Area of opening (SqFt) for one unit        : 11.57
+10) Number of identical assemblies             :  1
+11) Net area of identical assemblies (L9 x L10): 11.57
+
+Overhang Adjustment
+12) Opening height (H) in ft                   : 3.16
+13) Overhang length (X) in ft                  : 1.00
+14) SLM value for local latitude               : 0.82
+15) Shade line to OH (Z) = L13 x L14           : 0.820
+16) Distance below OH (Y)                      : 0.66
+17) Shaded height                              : 0.160
+18) Unshaded height (U)                        : 3.00
+19) North HTM from Table 3A                    : 16.00
+20) HTM adjustment (copy L7)                   : 1.00
+21) Adjusted North HTM (L19 x L20)             : 16.00
+22) Shaded glass factor = L17 / L12            : 0.05
+23) Unshaded glass factor = L18 / L12          : 0.95
+24) Shaded HTM = L21 x L22                     : 0.81
+25) Unshaded HTM = L8 x L23                    : 43.67
+26) Effective HTM = L24 + L25                  : 44.48
+------------------------------------------------------------
+Direction             :     W
+Number of panes_thick :     2
+Frame Type            :     w
+ 1) Table 2A construction number               : 1D-c      
+ 2) Table 2A U-value                           : 0.57
+ 3) Unadjusted heating HTM = U x HTD           : 25.65
+ 4) Heating HTM adjustment (see Note 1)        : 1.00
+ 5) Adjusted heating HTM (L3 x L4)             : 25.65
+ 6) Unadjusted cooling (from Table 3A)         : 46.00
+ 7) Cooling HTM adjustment (see Note 2)        : 0.90
+ 8) Adjusted cooling HTM (L6 x L7)             : 41.40
+ 9) Area of opening (SqFt) for one unit        : 13.87
+10) Number of identical assemblies             :  1
+11) Net area of identical assemblies (L9 x L10): 13.87
+
+Overhang Adjustment
+12) Opening height (H) in ft                   : 4.75
+13) Overhang length (X) in ft                  : 96.00
+14) SLM value for local latitude               : 0.82
+15) Shade line to OH (Z) = L13 x L14           : 78.720
+16) Distance below OH (Y)                      : 1.00
+17) Shaded height                              : 77.720
+18) Unshaded height (U)                        :
+19) North HTM from Table 3A                    : 16.00
+20) HTM adjustment (copy L7)                   : 0.90
+21) Adjusted North HTM (L19 x L20)             : 14.40
+22) Shaded glass factor = L17 / L12            :
+23) Unshaded glass factor = L18 / L12          :
+24) Shaded HTM = L21 x L22                     :
+25) Unshaded HTM = L8 x L23                    :
+26) Effective HTM = L24 + L25                  : 14.40
+============================================================
+
+============================================================
+Worksheet C: Skylights
+============================================================
+
+4.0
+Zone 1
+    Zone 1 ExtWall 1 Door 1
+        in get_opaque_panel........
+11N-0
+This door should actually be classified as a 'French Door' - use in Wksht A

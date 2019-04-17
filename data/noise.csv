@@ -1,0 +1,12 @@
+location,application,nc_level_min,nc_level_max,maximum_velocity
+private residence,rural,20,25,700
+private residence,suburban,20,25,700
+private residence,urban,25,30,700
+private residence,apartments,30,35,700
+offices,executive,25,30,700
+offices,conference rooms,25,30,700
+offices,private,30,35,700
+offices,open bay areas,35,40,800
+offices,computer room,35,40,900
+offices,business machine room,40,45,900
+offices,waiting rooms,40,45,900

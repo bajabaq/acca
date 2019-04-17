@@ -1,0 +1,130 @@
+#use configparser to read this file
+#may have to edit to get to work
+#see:  https://docs.python.org/2/library/configparser.html
+
+#see rescheck for possible variable names
+
+#this output is from site survey
+#project type and sub_type are used by manual T
+[Location]
+project_name: Example 10-14
+project_street_address: 123 Maple Dr
+project_city: Sometown
+project_state: XX
+project_type: offices
+num_occupants: 3333
+num_bedrooms: 0
+num_zones: 1
+
+#this is output from manual J
+[Design Parameters]
+outdoor_dry_bulb: 9500
+indoor_dry_bulb: 7500
+indoor_relative_humidity: 5000
+indoor_wet_bulb: 6300
+sensible_load: 2720000
+latent_load: 670000
+outdoor_ventilation:0000
+
+[Zones]
+num_zones: 1
+zone_coords: NOT_YET_DONE
+
+[Zone 1]
+list_rooms: 1
+
+#supply_location = (floor or low sidewall or baseboard) or high sidewall or ceiling
+#air_exit = return or transfer
+
+#type maybe used for Manual J computations...
+#name used as identifier, if not supplied use generic section-type name: "Room 1 bedroom" 
+#need to describe outlet location, if known
+[Room 1]:
+name: example 10-14
+type: xxxprivate office
+x: 50
+y: 24
+z: 12
+cfm: 1500
+supply_location: high sidewall
+
+#num_supply_terminals: 4
+#supply1_x: 8
+#supply1_y: 6
+#supply2_x: 8
+#supply2_y: 6
+#supply3_x: 8
+#supply3_y: 6
+#supply4_x: 8
+#supply4_y: 6
+
+#num_supply_terminals: 6
+#supply1_x: 8
+#supply1_y: 6
+#supply2_x: 8
+#supply2_y: 6
+#supply3_x: 8
+#supply3_y: 6
+#supply4_x: 8
+#supply4_y: 6
+#supply5_x: 8
+#supply5_y: 6
+#supply6_x: 8
+#supply6_y: 6
+
+#num_supply_terminals: 1
+#supply1_x: 50
+#supply1_y: 12
+
+
+air_exit: return
+air_exit_type: regular
+
+
+[Windows]
+#       type, orientation, width, height, overhang
+windows=a,b,c,d,e,f
+a = 1E-c-mb,North-B1,4.5,5.3,1.5
+b = 1D-c-mb,East-A1,3,6,1.5
+
+#glass door
+c = 1D-c-mb,West-C1,4,11,1.5 
+
+d = 1D-c-mb,West-A2,4,7,1.5
+e = 1D-c-mb,South-A1,4,7,1.5
+f = 1E-c-mb,South-B2,4,7,1.5
+
+
+[Skylights]         
+skylights = ()
+ 
+[Doors] 
+#       type, orientation, width, height
+doors=(('11N-metal-door','North',3,7),
+       ('11N-metal-door','South',3,7))
+
+[Walls]       
+#                               type, orientation, width, height       
+above_grade_walls=(('12C-2sw-stucco','North',30,8),
+                   ('12C-2sw-stucco', 'East',40,8),
+                   ('12C-2sw-stucco', 'West',40,8),
+                   ('12C-2sw-stucco','South',30,8))
+
+#                 type, orientation, width, height       
+partition_walls=(('12C-2sw-stucco','Garage',18,8)) #what??
+
+below_grade_walls=()
+
+[Ceilings]
+#          type      , slope, width, length
+ceilings=(('16B-30ad',     0,    30,     40))
+
+parition_ceilings=()
+
+[Floors]
+#                type    , orientation,                width, length
+passive_floors=(('22A-ph',      'slab','no insulation',   30,     40))
+
+partition_floors=()
+
+

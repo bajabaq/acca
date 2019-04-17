@@ -1,0 +1,74 @@
+#use configparser to read this file
+#may have to edit to get to work
+#see:  https://docs.python.org/2/library/configparser.html
+
+[Location]
+project_name: Example 3-13
+project_street_address: 123 Maple Dr
+project_city: Sometown
+project_state: XX
+num_occupants: 3
+num_bedrooms: 2
+
+#this is output from manual J
+[Design Parameters]
+outdoor_dry_bulb: 95
+indoor_dry_bulb: 75
+indoor_relative_humidity: 50
+indoor_wet_bulb: 63
+sensible_load: 27200
+latent_load: 6700
+outdoor_ventilation:0
+
+
+[Zones]
+num_zones: 1
+zone_coords: NOT_YET_DONE
+
+[Windows]
+#       type, orientation, width, height, overhang
+windows=a,b,c,d,e,f
+a = 1E-c-mb,North-B1,4.5,5.3,1.5
+b = 1D-c-mb,East-A1,3,6,1.5
+
+#glass door
+c = 1D-c-mb,West-C1,4,11,1.5 
+
+d = 1D-c-mb,West-A2,4,7,1.5
+e = 1D-c-mb,South-A1,4,7,1.5
+f = 1E-c-mb,South-B2,4,7,1.5
+
+
+[Skylights]         
+skylights = ()
+ 
+[Doors] 
+#       type, orientation, width, height
+doors=(('11N-metal-door','North',3,7),
+       ('11N-metal-door','South',3,7))
+
+[Walls]       
+#                               type, orientation, width, height       
+above_grade_walls=(('12C-2sw-stucco','North',30,8),
+                   ('12C-2sw-stucco', 'East',40,8),
+                   ('12C-2sw-stucco', 'West',40,8),
+                   ('12C-2sw-stucco','South',30,8))
+
+#                 type, orientation, width, height       
+partition_walls=(('12C-2sw-stucco','Garage',18,8)) #what??
+
+below_grade_walls=()
+
+[Ceilings]
+#          type      , slope, width, length
+ceilings=(('16B-30ad',     0,    30,     40))
+
+parition_ceilings=()
+
+[Floors]
+#                type    , orientation,                width, length
+passive_floors=(('22A-ph',      'slab','no insulation',   30,     40))
+
+partition_floors=()
+
+

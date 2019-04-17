@@ -1,0 +1,99 @@
+model,type,duct_dim_in,duct_area_sqft,duct_area_type,throw_direction,velocity_fpm,velocity_type,pressure_loss,terminal_velocity,cfm,spread,throw,ak,nc
+411,vertical diffuser,4x12,0.333333333,face,,300,face,0.006,50,65,5,3,0.21,
+411,vertical diffuser,4x12,0.333333333,face,,400,face,0.01,50,85,7,4,0.21,
+411,vertical diffuser,4x12,0.333333333,face,,500,face,0.016,50,105,8.5,5,0.21,
+411,vertical diffuser,4x12,0.333333333,face,,600,face,0.022,50,125,10,6,0.21,
+411,vertical diffuser,4x12,0.333333333,face,,700,face,0.031,50,145,12,7,0.21,
+411,vertical diffuser,4x12,0.333333333,face,,800,face,0.04,50,170,13.5,8,0.21,
+411,vertical diffuser,4x12,0.333333333,face,,900,face,0.05,50,190,15.5,9,0.21,
+411,vertical diffuser,4x12,0.333333333,face,,1000,face,0.062,50,210,17,10,0.21,
+411,vertical diffuser,4x14,0.388888889,face,,300,face,0.006,50,75,5.5,3.5,0.25,
+411,vertical diffuser,4x14,0.388888889,face,,400,face,0.01,50,100,7.5,4.5,0.25,
+411,vertical diffuser,4x14,0.388888889,face,,500,face,0.016,50,125,9.5,5.5,0.25,
+411,vertical diffuser,4x14,0.388888889,face,,600,face,0.022,50,150,11,6.5,0.25,
+411,vertical diffuser,4x14,0.388888889,face,,700,face,0.031,50,175,13,7.5,0.25,
+411,vertical diffuser,4x14,0.388888889,face,,800,face,0.04,50,200,15,9,0.25,
+411,vertical diffuser,4x14,0.388888889,face,,900,face,0.05,50,225,17,10,0.25,
+411,vertical diffuser,4x14,0.388888889,face,,1000,face,0.062,50,250,18.5,11,0.25,
+421,vertical diffuser,4x12,0.333333333,face,,300,face,0.006,50,60,5,4,0.195,
+421,vertical diffuser,4x12,0.333333333,face,,400,face,0.01,50,80,6.5,5.5,0.195,
+421,vertical diffuser,4x12,0.333333333,face,,500,face,0.016,50,100,8,7,0.195,
+421,vertical diffuser,4x12,0.333333333,face,,600,face,0.022,50,120,9.5,8,0.195,
+421,vertical diffuser,4x12,0.333333333,face,,700,face,0.031,50,140,11.5,9.5,0.195,
+421,vertical diffuser,4x12,0.333333333,face,,800,face,0.04,50,160,13,11,0.195,
+421,vertical diffuser,4x12,0.333333333,face,,900,face,0.05,50,175,14.5,12,0.195,
+421,vertical diffuser,4x12,0.333333333,face,,1000,face,0.062,50,195,16,13,0.195,
+421,vertical diffuser,4x14,0.388888889,face,,300,face,0.006,50,70,5.5,4.5,0.23,
+421,vertical diffuser,4x14,0.388888889,face,,400,face,0.01,50,90,7,5.5,0.23,
+421,vertical diffuser,4x14,0.388888889,face,,500,face,0.016,50,115,8.5,7,0.23,
+421,vertical diffuser,4x14,0.388888889,face,,600,face,0.022,50,140,10,8.5,0.23,
+421,vertical diffuser,4x14,0.388888889,face,,700,face,0.031,50,160,12,10,0.23,
+421,vertical diffuser,4x14,0.388888889,face,,800,face,0.04,50,185,13.5,11.5,0.23,
+421,vertical diffuser,4x14,0.388888889,face,,900,face,0.05,50,205,15.5,12.5,0.23,
+421,vertical diffuser,4x14,0.388888889,face,,1000,face,0.062,50,230,17,14,0.23,
+406,baseboard,2.25x14,0.21875,face,,190,face,0.005,50,50,3.5,3.5,,
+406,baseboard,2.25x14,0.21875,face,,285,face,0.011,50,75,4.5,4.5,,
+406,baseboard,2.25x14,0.21875,face,,380,face,0.02,50,100,6,6.5,,
+406,baseboard,2.25x14,0.21875,face,,475,face,0.032,50,125,7.5,8,,
+406,baseboard,2.25x14,0.21875,face,,570,face,0.045,50,150,8.5,9,,
+406,baseboard,2.25x14,0.21875,face,,665,face,0.064,50,175,9.5,9.5,,
+406,baseboard,2.25x14,0.21875,face,,760,face,0.082,50,200,10.5,10.5,,
+406,baseboard,2.25x12,0.21875,face,,190,face,0.006,50,50,3.5,3.5,,
+406,baseboard,2.25x12,0.21875,face,,285,face,0.014,50,75,4.5,4.5,,
+406,baseboard,2.25x12,0.21875,face,,380,face,0.025,50,100,6,6.5,,
+406,baseboard,2.25x12,0.21875,face,,475,face,0.04,50,125,7.5,8,,
+406,baseboard,2.25x12,0.21875,face,,570,face,0.056,50,150,8.5,9,,
+406,baseboard,2.25x12,0.21875,face,,665,face,0.078,50,175,9.5,9.5,,
+406,baseboard,2.25x12,0.21875,face,,760,face,0.1,50,200,10.5,10.5,,
+464,baseboard,48x1.125,0.375,core,,153,core,0.006,50,50,6,4.5,,
+464,baseboard,48x1.125,0.375,core,,186,core,0.012,50,70,8,5.5,,
+464,baseboard,48x1.125,0.375,core,,240,core,0.021,50,90,10,6.5,,
+464,baseboard,48x1.125,0.375,core,,293,core,0.031,50,110,12,7.5,,
+464,baseboard,48x1.125,0.375,core,,347,core,0.043,50,130,13.5,8,,
+464,baseboard,48x1.125,0.375,core,,400,core,0.058,50,150,15,9,,
+464,baseboard,48x1.125,0.375,core,,453,core,0.072,50,170,16.5,9.5,,
+464,baseboard,48x1.125,0.375,core,,503,core,0.094,50,190,18,10.5,,
+tmr,ceiling diffuser,8d,0.34906585,face,360,600,face,0.075,100,210,,5,,21
+tmr,ceiling diffuser,8d,0.34906585,face,360,700,face,0.101,100,245,,6,,26
+tms,ceiling diffuser,8d,0.34906585,face,360,600,face,0.054,100,209,,5,,11
+tms,ceiling diffuser,8d,0.34906585,face,360,700,face,0.073,100,244,,5,,16
+tmr,ceiling diffuser,16d,1.396263402,face,360,600,face,0.076,100,840,,10,,22
+tmr,ceiling diffuser,16d,1.396263402,face,360,700,face,0.102,100,980,,12,,27
+tms,ceiling diffuser,15d,1.22718463,face,360,600,face,0.04,100,736,,8,,22
+tms,ceiling diffuser,15d,1.22718463,face,360,700,face,0.055,100,859,,9,,26
+a-302,ceiling,12x12,1,face,2-way-0-180,600,face,0.022,75,220,,14,0.367,
+a-302,ceiling,12x12,1,face,2-way-0-180,700,face,0.031,75,260,,17,0.367,
+a-303,ceiling,10x10,0.694444444,face,3-way-0-90-180,500,face,0.016,75,125,,8,0.252,
+a-303,ceiling,10x10,0.694444444,face,3-way-0-90-180,600,face,0.022,75,150,,9.5,0.252,
+a-303,ceiling,10x10,0.694444444,face,3-way-0-90-180,700,face,0.031,75,175,,11,0.252,
+C-type,register,14x6,0.583333333,face,2-way-0-180,600,face,0.022,75,125,,6,0.21,
+C-type,register,14x6,0.583333333,face,2-way-0-180,700,face,0.031,75,145,,7,0.21,
+30R,grille,22x12,1.833333333,face,,400,core,0.029,,640,,,,10
+30R,grille,20x16,2.222222222,face,,400,core,0.029,,832,,,,10
+30R,grille,18x12,1.5,face,,400,core,0.029,,536,,,,10
+30R,grille,22x12,1.6,core,,400,core,0.029,,640,,,,10
+30R,grille,20x16,2.08,core,,400,core,0.029,,832,,,,10
+30R,grille,18x12,1.34,core,,400,core,0.029,,536,,,,10
+30R,grille,30x16,3.333333333,face,,400,core,0.029,,1244,,,,10
+30R,grille,32x20,4.444444444,face,,400,core,0.029,,1716,,,,10
+30R,grille,32x20,4.29,core,,400,core,0.029,,1716,,,,10
+30R,grille,14x12,1.07,core,,400,core,0.029,,428,,,,10
+30R,grille,14x14,1.18,core,,400,core,0.029,,472,,,,10
+30R,grille,16x14,1.34,core,,400,core,0.029,,536,,,,10
+30R,grille,16x16,1.6,core,,400,core,0.029,,640,,,,10
+30R,grille,14x12,1.07,core,,500,core,0.046,,535,,,,10
+30R,grille,14x14,1.18,core,,500,core,0.046,,590,,,,10
+30R,grille,16x14,1.34,core,,500,core,0.046,,670,,,,11
+30R,grille,16x16,1.6,core,,500,core,0.046,,800,,,,12
+30R,grille,14x12,1.07,core,,600,core,0.064,,642,,,,17
+30R,grille,14x14,1.18,core,,600,core,0.064,,708,,,,17
+30R,grille,16x14,1.34,core,,600,core,0.064,,804,,,,18
+30R,grille,16x16,1.6,core,,600,core,0.064,,960,,,,19
+30R,grille,14x12,1.07,core,,700,core,0.089,,749,,,,23
+30R,grille,14x14,1.18,core,,700,core,0.089,,826,,,,23
+30R,grille,16x14,1.34,core,,700,core,0.089,,938,,,,24
+30R,grille,16x16,1.6,core,,700,core,0.089,,1120,,,,25
+30R,grille,14x12,1.07,core,,800,core,0.116,,856,,,,28
+30R,grille,14x14,1.18,core,,800,core,0.116,,944,,,,28
+30R,grille,16x14,1.34,core,,800,core,0.116,,1072,,,,29
+30R,grille,16x16,1.6,core,,800,core,0.116,,1280,,,,31

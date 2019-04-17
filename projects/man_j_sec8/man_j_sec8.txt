@@ -1,0 +1,266 @@
+[Location]
+project_name  = Victor Residence
+project_street_address = 123 Anyplace Dr
+project_city  = Lafayette
+project_state = Indiana
+project_zip   = 47901
+design_city   = lafayette
+design_state  = indiana
+blower_heat_discount = no
+
+[Internal]
+num_fireplaces    = 1
+num_bedrooms      = 3
+num_occupants     = 4
+appliance_load    = 2400
+num_small_plants  = 0
+num_medium_plants = 0
+num_large_plants  = 0
+envelope_leakage  = semi-loose
+fireplace_leakage = average
+
+[Zones]
+num_zones       = 1
+zone_coords     = NOT_YET_DONE
+
+[Zone 1]
+num_ext_walls   = 4
+num_ceilings    = 1
+num_p_ceilings  = 0
+num_floors      = 0
+num_p_floors    = 1
+floors_heated   = 0
+p_floors_heated = 1
+floors_cooled   = 0
+p_floors_cooled = 1
+
+[Zone 1 Duct 1]
+construction_number = 7D-AE
+num_supply_trunks   = 1
+num_supply_branches = 10
+num_return_trunks   = 1
+r-val               = 2
+leakage_supply      = 0.35
+leakage_return      = 0.70
+improved_r-val      = 8
+improved_leakage_supply = 0.12
+improved_leakage_return = 0.24
+
+[Zone 1 Duct 1 Supply Trunk 1]
+diameter = 2.13
+length   = 35
+
+[Zone 1 Duct 1 Supply Branch 1]
+diameter = 0.5
+length   = 18
+
+[Zone 1 Duct 1 Supply Branch 2]
+diameter = 0.5
+length   = 18
+
+[Zone 1 Duct 1 Supply Branch 3]
+diameter = 0.5
+length   = 18
+
+[Zone 1 Duct 1 Supply Branch 4]
+diameter = 0.5
+length   = 18
+
+[Zone 1 Duct 1 Supply Branch 5]
+diameter = 0.5
+length = 18
+
+[Zone 1 Duct 1 Supply Branch 6]
+diameter = 0.5
+length = 18
+
+[Zone 1 Duct 1 Supply Branch 7]
+diameter = 0.5
+length = 18
+
+[Zone 1 Duct 1 Supply Branch 8]
+diameter = 0.5
+length = 18
+
+[Zone 1 Duct 1 Supply Branch 9]
+diameter = 0.5
+length = 18
+
+[Zone 1 Duct 1 Supply Branch 10]
+diameter = 0.5
+length = 18
+
+[Zone 1 Duct 1 Return Trunk 1]
+diameter = 2.64
+length = 15.0
+
+#floor_type for PFloor should be partition
+#I think we can make Pfloor Floor and floor_type = 'floor' or 'partition'
+[Zone 1 PFloor 1]
+construction_number     = 19A
+floor_construction_code = p
+soil_condition_code     = NA
+insulation              = 11
+length                  = 50.00
+width                   = 36.00
+floor_type              = partition
+area_of_openings        = 0
+
+#this ceiling is a cathedral one 
+[Zone 1 Ceiling 1]
+construction_number = 18A
+insulation          = 19
+roof_material_code  = a
+roof_color          = d
+slope               = 30.0
+peak_height_above_floor = 21.0
+length              = 50.00
+width               = 36.00
+num_skylight_types  = 0
+area_of_openings    = 0
+
+
+#wall_type = 'above_grade or below_grade or partition'
+[Zone 1 ExtWall 1]
+direction           = N
+length              = 50.0
+height              = 8.0
+num_window_types    = 3
+num_door_types      = 1
+wall_type           = above_grade
+construction_number = 12B
+board_insulation    = 2
+exterior_material   = b
+framing_material    = w
+area_of_openings    = 24
+
+[Zone 1 ExtWall 1 Window 1]
+num_panes_thick     = 2
+frame_type          = w
+construction_number = 1D-c
+num_of_type         = 1
+height              = 6.67
+width               = 5.0
+overhang_width      = 1.0
+height_to_overhang  = 1.0
+window_door_type    = default
+insect_screen       = full indoor
+internal_shade      = blinds
+
+[Zone 1 ExtWall 1 Window 2]
+num_panes_thick     = 2
+frame_type          = w
+construction_number = 1E-c
+num_of_type         = 2
+height              = 3.0
+width               = 1.5
+overhang_width      = 1.0
+height_to_overhang  = 1.0
+window_door_type    = default
+insect_screen       = none
+internal_shade      = none
+
+[Zone 1 ExtWall 1 Window 3]
+num_panes_thick     = 2
+frame_type          = m
+construction_number = 1D-c
+num_of_type         = 1
+height              = 7.0
+width               = 6.33
+overhang_width      = 1.0
+height_to_overhang  = 1.0
+window_door_type    = default
+insect_screen       = full indoor
+internal_shade      = blinds
+
+[Zone 1 ExtWall 1 Door 1]
+construction_number = 11N
+length              = 3.0
+height              = 7.0
+percent_area_glass  = 0
+
+[Zone 1 ExtWall 2]
+direction           = E
+length              = 36.0
+height              = 8.0
+num_window_types    = 1
+num_door_types      = 0
+wall_type           = above_grade
+construction_number = 12B
+board_insulation    = 2
+exterior_material   = b
+framing_material    = w
+area_of_openings    = 21.0
+
+[Zone 1 ExtWall 2 Window 1]
+num_panes_thick     = 2
+frame_type          = w
+construction_number = 1D-c
+num_of_type         = 2
+height              = 4.5
+width               = 3.5
+overhang_width      = 1.0
+height_to_overhang  = 8.0
+window_door_type    = default
+insect_screen       = full indoor
+internal_shade      = blinds
+
+[Zone 1 ExtWall 3]
+direction           = S
+length              = 50.0
+height              = 8.0
+num_window_types    = 1
+num_door_types      = 1
+wall_type           = above_grade
+construction_number = 12B
+board_insulation    = 2
+exterior_material   = b
+framing_material    = w
+area_of_openings    = 36.0
+
+[Zone 1 ExtWall 3 Window 1]
+num_panes_thick     = 2
+frame_type          = w
+construction_number = 1E-c
+num_of_type         = 4
+height              = 4.5
+width               = 5.0
+overhang_width      = 6.0
+height_to_overhang  = 1.0
+window_door_type    = default
+insect_screen       = none
+internal_shade      = blinds
+
+[Zone 1 ExtWall 3 Door 1]
+construction_number = 11N
+length              = 3.0
+height              = 7.0
+percent_area_glass  = 0
+
+[Zone 1 ExtWall 4]
+direction           = W
+length              = 36.0
+height              = 8.0
+num_window_types    = 1
+num_door_types      = 0
+wall_type           = above_grade
+construction_number = 12B
+board_insulation    = 2
+exterior_material   = b
+framing_material    = w
+area_of_openings    = 69
+
+[Zone 1 ExtWall 4 Window 1]
+num_panes_thick     = 2
+frame_type          = w
+construction_number = 1D-c
+num_of_type         = 2
+height              = 4.5
+width               = 3.5
+overhang_width      = 1.0
+height_to_overhang  = 5.0
+window_door_type    = default
+insect_screen       = full indoor
+internal_shade      = blinds
+
+

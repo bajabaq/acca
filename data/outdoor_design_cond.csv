@@ -1,0 +1,11 @@
+state,city,elevation,latitude,heating_99per_db,cooling_1per_db,concident_wb,design_grains_55per_rh,design_grains_50per_rh,design_grains_45per_rh,daily_range
+texas,houston ap,96,29,31,94,77,44,51,57,m
+south carolina,columbia ap,213,34,24,94,75,31,38,44,m
+georgia,augusta ap,148,33,25,94,76,37,44,50,m
+indiana,lafayette,607,40,3,90,75,38,45,51,m
+iowa,cedar rapids ap,863,41,-5,89,74,33,40,46,m
+iowa,ames,955,42,-6,90,74,31,38,44,m
+florida,homestead afb,7,25,52,90,78,57,64,70,l
+florida,fort myers ap,15,26,47,93,77,46,53,59,m
+oklahoma,ponca city,1007,36,9,97,74,20,27,33,m
+california,concord,23,38,27,97,68,-14,-7,-1,h 

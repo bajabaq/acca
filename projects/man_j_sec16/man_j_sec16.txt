@@ -1,0 +1,290 @@
+#use configparser to read this file
+#may have to edit to get to work
+#see:  https://docs.python.org/2/library/configparser.html
+
+[Location]
+project_name: Fry Residence
+project_street_address: 123 Anyplace Dr
+project_city: Concord
+project_state: California
+project_zip: 111111
+design_city: concord
+design_state: california
+blower_heat_discount: no
+
+#this might need to be in each zone
+[Internal]
+num_bedrooms: 2
+#maybe don't need num_occupants b/c default is num_bedrooms + 1
+num_occupants: 3
+#maybe instead of specifying this, look at num_zones and multiply 1200*num_zones...
+appliance_load: 1200
+
+num_small_plants: 0
+num_medium_plants: 0
+num_large_plants: 0
+
+
+[Zones]
+num_zones: 1
+
+zone_coords: NOT_YET_DONE
+#could use list of zone coordinates to get:
+#num_ext_walls, orientation, area...
+#[(lat1,lng1),(lat2,lng2),(lat3,lng3),(lat4,lng4)]
+#num_pairs = num_walls
+#walls direction are normal to line between coords 1-2, 2-3, 3-4, 4-1
+#wall length is distance between coords 1-2, 2-3, ...
+
+
+[Zone 1]
+num_ext_walls : 5
+num_ceilings  : 1
+num_p_ceilings: 0
+num_floors    : 1
+num_p_floors  : 0
+#these should be a comma seperated list 
+floors_heated   : 1
+p_floors_heated : 0
+floors_cooled   : 1
+p_floors_cooled : 0
+
+[Zone 1 Duct 1]
+construction_number : 7A-AE
+num_supply_trunks   : 1
+num_supply_branches : 10
+num_return_trunks   : 1
+#these are defaults - improved is 0.12/0.24, higher has to be done by field test
+r-val               : 4
+leakage_supply      : 0.35
+leakage_return      : 0.70
+improved_r-val          : 8
+improved_leakage_supply : 0.12
+improved_leakage_return : 0.24
+
+
+[Zone 1 Duct 1 Supply Trunk 1]
+diameter : 1.59
+length   : 48
+
+[Zone 1 Duct 1 Supply Branch 1]
+diameter : 0.5
+length   : 8
+[Zone 1 Duct 1 Supply Branch 2]
+diameter : 0.5
+length   : 8
+[Zone 1 Duct 1 Supply Branch 3]
+diameter : 0.5
+length   : 8
+[Zone 1 Duct 1 Supply Branch 4]
+diameter : 0.5
+length   : 8
+[Zone 1 Duct 1 Supply Branch 5]
+diameter : 0.5
+length   : 8
+[Zone 1 Duct 1 Supply Branch 6]
+diameter : 0.5
+length   : 8
+[Zone 1 Duct 1 Supply Branch 7]
+diameter : 0.5
+length   : 8
+[Zone 1 Duct 1 Supply Branch 8]
+diameter : 0.5
+length   : 8
+[Zone 1 Duct 1 Supply Branch 9]
+diameter : 0.5
+length   : 8
+[Zone 1 Duct 1 Supply Branch 10]
+diameter : 0.5
+length   : 8
+
+[Zone 1 Duct 1 Return Trunk 1]
+diameter  : 2.2281
+length    : 10.0
+
+
+[Zone 1 Floor 1]
+construction_number     : 22A
+floor_construction_code : p
+soil_condition_code     : h
+insulation              : 0
+length                  : 40.00
+width                   : 30.00
+floor_type              : floor
+#this would be weird to have
+area_of_openings        : 0
+
+[Zone 1 Ceiling 1]
+construction_number: 16B
+insulation         : 30
+roof_material_code : a
+roof_color         : d
+slope              : 0.0
+length             : 40.00
+width              : 30.00
+num_skylight_types : 0
+#calculate_from_worksheetC_skylights
+area_of_openings  :  0
+
+
+[Zone 1 ExtWall 1]
+direction          : N
+length             : 22.0
+height             : 8.0
+num_window_types   : 1
+num_door_types     : 0
+wall_type          : above_grade
+construction_number: 12C
+board_insulation   : 2
+exterior_material  : s
+framing_material   : w
+#calculate_from_worksheetB_and_Doors
+area_of_openings  : 24
+
+
+[Zone 1 ExtWall 1 Window 1]
+num_panes_thick    : 2
+frame_type         : mb
+construction_number: 1E-c
+num_of_type        : 1
+height             : 4.0
+width              : 6.0
+overhang_width     : 1.5
+height_to_overhang : 1.0
+window_door_type   : default
+insect_screen      : none
+internal_shade     : blinds
+
+[Zone 1 ExtWall 2]
+direction          : N
+length             : 18.0
+height             : 8.0
+num_window_types   : 0
+num_door_types     : 1
+wall_type          : partition
+construction_number: 12C
+board_insulation   : 2
+exterior_material  : s
+framing_material   : w
+#calculate_from_worksheetB_and_Doors
+area_of_openings   : 21.0
+
+[Zone 1 ExtWall 2 Door 1]
+construction_number: 11N
+length             : 3.0
+height             : 7.0
+percent_area_glass : 0
+
+[Zone 1 ExtWall 3]
+direction          : E
+length             : 30.0
+height             : 8.0
+num_window_types   : 1
+num_door_types     : 0
+wall_type          : above_grade
+construction_number: 12C
+board_insulation   : 2
+exterior_material  : s
+framing_material   : w
+#calculate_from_worksheetB_and_Doors
+area_of_openings   : 36.0
+
+[Zone 1 ExtWall 3 Window 1]
+num_panes_thick    : 2
+frame_type         : mb
+construction_number: 1D-c
+num_of_type        : 2
+height             : 4.50
+width              : 4.0
+overhang_width     : 1.5
+height_to_overhang : 1.0
+window_door_type   : default
+insect_screen      : full indoor
+internal_shade     : blinds
+
+[Zone 1 ExtWall 4]
+direction          : S
+length             : 40.0
+height             : 8.0
+num_window_types   : 2
+num_door_types     : 1
+wall_type          : above_grade
+construction_number: 12C
+board_insulation   : 2
+exterior_material  : s
+framing_material   : w
+#calculate_from_worksheetB_and_Doors
+area_of_openings   : 69
+
+[Zone 1 ExtWall 4 Window 1]
+num_panes_thick    : 2
+frame_type         : mb
+construction_number: 1D-c
+num_of_type        : 2
+height             : 4.50
+width              : 4.0
+overhang_width     : 1.5
+height_to_overhang : 1.0
+window_door_type   : default
+insect_screen      : full indoor
+internal_shade     : blinds
+
+[Zone 1 ExtWall 4 Window 2]
+num_panes_thick    : 2
+frame_type         : mb
+construction_number: 1E-c
+num_of_type        : 1
+height             : 4.0
+width              : 3.0
+overhang_width     : 1.5
+height_to_overhang : 1.0
+window_door_type   : default
+insect_screen      : none
+internal_shade     : blinds
+
+[Zone 1 ExtWall 4 Door 1]
+construction_number: 11N
+length             : 3.0
+height             : 7.0
+percent_area_glass : 0
+
+[Zone 1 ExtWall 5]
+direction          : W
+length             : 30.0
+height             : 8.0
+num_window_types   : 2
+num_door_types     : 0
+wall_type          : above_grade
+construction_number: 12C
+board_insulation   : 2
+exterior_material  : s
+framing_material   : w
+#calculate_from_worksheetB_and_Doors
+area_of_openings   : 60.08
+
+[Zone 1 ExtWall 5 Window 1]
+num_panes_thick    : 2
+frame_type         : mb
+construction_number: 1D-c
+num_of_type        : 1
+height             : 4.50
+width              : 3.5
+overhang_width     : 1.5
+height_to_overhang : 1.0
+window_door_type   : default
+insect_screen      : full indoor
+internal_shade     : blinds
+
+#sliding glass door
+[Zone 1 ExtWall 5 Window 2]
+num_panes_thick    : 2
+frame_type         : mb
+construction_number: 1D-c
+num_of_type        : 1
+height             : 6.33
+width              : 7.00
+overhang_width     : 1.5
+height_to_overhang : 1.5
+window_door_type   : default
+insect_screen      : none
+internal_shade     : blinds

@@ -1,0 +1,72 @@
+#use configparser to read this file
+#may have to edit to get to work
+#see:  https://docs.python.org/2/library/configparser.html
+
+#see rescheck for possible variable names
+
+#this output is from site survey
+#project type and sub_type are used by manual T
+[Location]
+project_name: Example 10-11
+project_street_address: 123 Maple Dr
+project_city: Sometown
+project_state: XX
+project_type: offices
+num_occupants: 3333
+num_bedrooms: 0
+num_zones: 1
+
+#this is output from manual J
+[Design Parameters]
+outdoor_dry_bulb: 9500
+indoor_dry_bulb: 7500
+indoor_relative_humidity: 5000
+indoor_wet_bulb: 6300
+sensible_load: 2720000
+latent_load: 670000
+outdoor_ventilation:0000
+
+[Zones]
+num_zones: 1
+zone_coords: NOT_YET_DONE
+
+[Zone 1]
+list_rooms: 2
+
+#supply_location = (floor or low sidewall or baseboard) or high sidewall or ceiling
+#air_exit = return or transfer
+
+#type maybe used for Manual J computations...
+#name used as identifier, if not supplied use generic section-type name: "Room 1 bedroom" 
+#need to describe outlet location, if known
+[Room 1]:
+name: example 10-11-1
+man_t_type: offices_open_bay_areas
+x: 40
+y: 20
+z: 10
+cfm: 1600
+num_supply_terminals: 2
+supply_location: ceiling
+supply1_x: 10
+supply1_y: 10
+supply2_x: 30
+supply2_y: 10
+
+air_exit: return
+air_exit_type: grille
+
+[Room 2]:
+name: example 10-11-2
+man_t_location: offices
+man_t_application: private
+x: 10
+y: 20
+z: 10
+cfm: 220
+num_supply_terminals: 1
+supply_location1: ceiling, 5, 10, 10
+
+air_exit: return
+air_exit_type: grille
+

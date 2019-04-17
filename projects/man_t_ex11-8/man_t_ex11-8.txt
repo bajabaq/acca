@@ -1,0 +1,59 @@
+#use configparser to read this file
+#may have to edit to get to work
+#see:  https://docs.python.org/2/library/configparser.html
+
+#see rescheck for possible variable names
+
+#this output is from site survey
+#project type and sub_type are used by manual T
+[Location]
+project_name: Example 11-8
+project_street_address: 123 Maple Dr
+project_city: Sometown
+project_state: XX
+num_zones: 1
+
+#this is output from manual J
+[Design Parameters]
+
+[Zones]
+num_zones: 1
+zone_coords: NOT_YET_DONE
+
+[Zone 1]
+list_rooms: 1,2
+
+#supply_location = (floor or low sidewall or baseboard) or high sidewall or ceiling
+#air_exit = return or transfer
+
+#type maybe used for Manual J computations...
+#name used as identifier, if not supplied use generic section-type name: "Room 1 bedroom" 
+#need to describe outlet location, if known
+
+[Room 1]:
+name: example 11-8-transfer
+man_t_location: private residence
+man_t_application: suburban
+x: 20
+y: 10
+z: 10
+cfm: 350
+num_supply_terminals: 1
+supply_location1: floor,0,0,0
+
+air_exit: transfer
+air_exit_type: grille
+
+[Room 2]:
+name: example 11-8-undercut
+man_t_location: private residence
+man_t_application: suburban
+x: 20
+y: 10
+z: 10
+cfm: 120
+num_supply_terminals: 1
+supply_location1: floor,0,0,0
+
+air_exit: transfer
+air_exit_type: undercut
